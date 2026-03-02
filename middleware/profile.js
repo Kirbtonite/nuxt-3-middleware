@@ -7,4 +7,5 @@ export default defineNuxtRouteMiddleware((to, from) => {
   } else if (to.params.username !== currentUser.value) {
     return navigateTo('/profile/' + currentUser.value)
   }
+  console.log('--- Profile Middleware ---')
 })
